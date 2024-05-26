@@ -7,19 +7,23 @@ import {
 import LogoRender from "./ui/LogoRender";
 import WordRotate from "./magicui/word-rotate";
 import { SocialIcons } from "./SocialIcons";
+import { useEffect } from "react";
 
 const HeroSection = () => {
   const controls = useAnimation();
   const { scrollY } = useScroll();
 
-  useAnimationFrame(() => {
-    const scrollYValue = scrollY.get();
-    controls.start({
-      scale: 1 - scrollYValue / 1500,
-      opacity: 1 - scrollYValue / 1500,
-      transition: { duration: 0.01 },
+  useEffect(() => {
+    const unsubscribe = scrollY.onChange((currentScrollY) => {
+      controls.start({
+        scale: 1 - currentScrollY / 1500,
+        opacity: 1 - currentScrollY / 1500,
+        transition: { duration: 0.01 },
+      });
     });
-  });
+
+    return () => unsubscribe();
+  }, [scrollY, controls]);
 
   return (
     <motion.section

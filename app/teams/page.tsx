@@ -1,3 +1,5 @@
+import { TeamTabs } from "@/components/TeamTabs";
+
 export default function Teams() {
-  return <div>Teams</div>;
+  return <TeamTabs/>
 }
