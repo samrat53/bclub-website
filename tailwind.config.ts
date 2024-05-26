@@ -15,6 +15,7 @@ const config: Config = {
     extend: {
       animation: {
         meteor: "meteor 5s linear infinite",
+        ripple: "ripple 3400ms ease infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -30,6 +31,14 @@ const config: Config = {
             opacity: `0`,
           },
         },
+        ripple: {
+          "0%, 100%": {
+            transform: "translate(-50%, -50%) scale(0.8)",
+          },
+          "50%": {
+            transform: "translate(-50%, -50%) scale(0.5)",
+          },
+        },
       },
     },
   },
@@ -42,7 +51,7 @@ function addVariablesForColors({ addBase, theme }: any) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });

@@ -9,3 +9,10 @@ body{
 .glassy {
   @apply bg-opacity-30 backdrop-filter backdrop-blur-lg;
 }
+
+.radiant-text {
+  background: linear-gradient(45deg, #7BC9FF,#493f97, #0d0852);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold; /* Optional: Makes the text bold */
+}
