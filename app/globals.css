@@ -16,3 +16,6 @@ body{
   color: transparent;
   font-weight: bold; /* Optional: Makes the text bold */
 }
+html {
+  scroll-behavior: smooth;
+}

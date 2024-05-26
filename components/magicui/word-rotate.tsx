@@ -13,7 +13,7 @@ interface WordRotateProps {
 
 export default function WordRotate({
   words,
-  duration = 2000,
+  duration = 1800,
   framerProps = {
     initial: { opacity: 0, y: -50 },
     animate: { opacity: 1, y: 0 },

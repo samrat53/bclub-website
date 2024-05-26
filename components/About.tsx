@@ -1,37 +1,55 @@
-"use client";
-import { motion } from "framer-motion";
+// components/About.tsx
+import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import LogoRender from "./ui/LogoRender";
-import WordRotate from "./magicui/word-rotate";
+import React from "react";
+import { LampContainer } from "@/components/ui/lamp";
 
-const ShuffleHero = ({ section }: { section: string }) => {
+const About = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: false });
+
   return (
-    <section className="w-full px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto">
-      <motion.div 
-      initial={{ x: "-10vw", opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 30, damping: 10 }}
-      className="">
-        <h3 className="text-4xl md:text-6xl font-semibold">Business Club</h3>
-        <h4 className="text-2xl md:text-3xl font-semibold pt-2">
-          NIT Agartala
-        </h4>
-        <WordRotate className="text-2xl md:text-3xl font-semibold pt-2 radiant-text" words={[
-        "Dream.",
-        "Believe.",
-        "Achieve.",
-      ]}/>
-      </motion.div>
-      {section === "hero" ? <LogoRender /> : <ShuffleGrid />}
-    </section>
+    <>
+      <section
+        ref={ref}
+        className="w-full h-[100vh] px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto "
+      >
+        <motion.div
+          initial={{ scale: 0.1, opacity: 0 }}
+          animate={
+            inView ? { scale: 1, opacity: 1 } : { scale: 0.1, opacity: 0 }
+          }
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+        >
+          <h3 className="text-4xl md:text-6xl font-semibold">
+            WHAT | WHY | WHOM
+          </h3>
+          <p className="text-base md:text-lg  my-4 md:my-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            beatae repellat reprehenderit officiis necessitatibus a natus
+            ducimus fugiat illo. Commodi ipsa consequuntur recusandae deserunt
+            voluptatum, possimus ratione est eos doloribus.
+          </p>
+        </motion.div>
+        <motion.div
+          initial={{ scale: 0.1, opacity: 0 }}
+          animate={
+            inView ? { scale: 1, opacity: 1 } : { scale: 0.1, opacity: 0 }
+          }
+          transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
+        >
+          <ShuffleGrid />
+        </motion.div>
+      </section>
+    </>
   );
 };
 
-const shuffle = (array: (typeof squareData)[0][]) => {
+const shuffle = (array: typeof squareData) => {
   let currentIndex = array.length,
     randomIndex;
 
-  while (currentIndex != 0) {
+  while (currentIndex !== 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
@@ -143,12 +161,10 @@ const ShuffleGrid = () => {
   };
 
   return (
-    <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
+    <div className="grid grid-cols-3 grid-rows-3 h-[450px] gap-1">
       {squares.map((sq) => sq)}
     </div>
   );
 };
 
-
-
-export default ShuffleHero;
+export default About;
