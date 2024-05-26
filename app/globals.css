@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  background-color: rgb(0, 9, 27);
+  background-color: rgb(7, 19, 43);
   color: white
 }
 .glassy {
@@ -19,3 +19,31 @@ body{
 html {
   scroll-behavior: smooth;
 }
+.custom-shape-divider-bottom-1716753471 {
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1716753471 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-bottom-1716753471 .shape-fill {
+  fill: #003f589c;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1716753471 svg {
+      width: calc(300% + 1.3px);
+      height: 425px;
+  }
+}
+    /* fill: #003f589c; */

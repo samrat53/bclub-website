@@ -2,7 +2,6 @@
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import React from "react";
-import { LampContainer } from "@/components/ui/lamp";
 
 const About = () => {
   const ref = useRef(null);
@@ -12,14 +11,15 @@ const About = () => {
     <>
       <section
         ref={ref}
-        className="w-full h-[100vh] px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto "
+        id="about"
+        className="w-full h-[70vh] px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto"
       >
         <motion.div
           initial={{ scale: 0.1, opacity: 0 }}
           animate={
-            inView ? { scale: 1, opacity: 1 } : { scale: 0.1, opacity: 0 }
+            inView ? { scale: 1, opacity: 1 } : { scale: 0.1, opacity: 0.5 }
           }
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
         >
           <h3 className="text-4xl md:text-6xl font-semibold">
             WHAT | WHY | WHOM
@@ -157,11 +157,11 @@ const ShuffleGrid = () => {
   const shuffleSquares = () => {
     setSquares(generateSquares());
 
-    timeoutRef.current = setTimeout(shuffleSquares, 3000);
+    timeoutRef.current = setTimeout(shuffleSquares, 3500);
   };
 
   return (
-    <div className="grid grid-cols-3 grid-rows-3 h-[450px] gap-1">
+    <div className="grid grid-cols-3 grid-rows-3 h-[450px] gap-1 -z-10">
       {squares.map((sq) => sq)}
     </div>
   );

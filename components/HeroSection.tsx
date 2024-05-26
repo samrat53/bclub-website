@@ -1,6 +1,12 @@
-import { motion, useAnimation, useScroll, useAnimationFrame } from "framer-motion";
+import {
+  motion,
+  useAnimation,
+  useScroll,
+  useAnimationFrame,
+} from "framer-motion";
 import LogoRender from "./ui/LogoRender";
 import WordRotate from "./magicui/word-rotate";
+import { SocialIcons } from "./SocialIcons";
 
 const HeroSection = () => {
   const controls = useAnimation();
@@ -35,6 +41,8 @@ const HeroSection = () => {
           className="text-2xl md:text-3xl font-semibold pt-2 radiant-text"
           words={["Dream.", "Believe.", "Achieve."]}
         />
+
+        <SocialIcons />
       </motion.div>
       <LogoRender />
     </motion.section>
