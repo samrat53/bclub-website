@@ -134,7 +134,7 @@ const generateSquares = () => {
     <motion.div
       key={sq.id}
       layout
-      transition={{ duration: 1.5, type: "spring" }}
+      transition={{ duration: 1.0, type: "spring" }}
       className="w-full h-full"
       style={{
         backgroundImage: `url(${sq.src})`,
@@ -157,7 +157,7 @@ const ShuffleGrid = () => {
   const shuffleSquares = () => {
     setSquares(generateSquares());
 
-    timeoutRef.current = setTimeout(shuffleSquares, 3500);
+    timeoutRef.current = setTimeout(shuffleSquares, 2000);
   };
 
   return (

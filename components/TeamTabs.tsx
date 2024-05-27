@@ -58,21 +58,23 @@ export function TeamTabs() {
   ];
 
   return (
-    <motion.div
-      initial={{ x: "-10vw", opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 30, damping: 10 }}
-      className="h-[100vh] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-7xl mx-auto w-full sm:w-[40rem] md:w-[50rem] lg:w-auto items-start justify-start my-40"
-    >
-      <h3 className="text-4xl md:text-6xl font-semibold">Core Team</h3>
-      <p className="text-base md:text-lg  my-4 md:my-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-        beatae repellat reprehenderit officiis necessitatibus a natus ducimus
-        fugiat illo. Commodi ipsa consequuntur recusandae deserunt voluptatum,
-        possimus ratione est eos doloribus.
-      </p>
+    <div className="h-[100vh] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-7xl mx-auto w-full sm:w-[40rem] md:w-[50rem] lg:w-auto items-start justify-start my-40">
+      <motion.div
+        initial={{ x: "-10vw", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 30, damping: 10 }}
+        className="pb-5"
+      >
+        <h3 className="text-4xl md:text-6xl font-semibold">Core Team</h3>
+        <p className="text-base md:text-lg  my-4 md:my-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          beatae repellat reprehenderit officiis necessitatibus a natus ducimus
+          fugiat illo. Commodi ipsa consequuntur recusandae deserunt voluptatum,
+          possimus ratione est eos doloribus.
+        </p>
+      </motion.div>
       <Tabs tabs={tabs} />
-    </motion.div>
+    </div>
   );
 }
 
