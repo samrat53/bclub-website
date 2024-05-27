@@ -13,7 +13,7 @@ interface Item {
 
 let notifications = [
   {
-    name: "Event 1 long time back",
+    name: "Event bottom",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae repellat reprehenderit officiis necessitatibus a natus ducimus fugiat illo. Commodi ipsa consequuntur recusandae deserunt voluptatum, possimus ratione est eos doloribus.",
     time: "15-Aug-1947",
@@ -22,17 +22,29 @@ let notifications = [
     color: "#00C9A7",
   },
   {
-    name: "Event 2 most recent",
+    name: "Event 1 middle ",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae repellat reprehenderit officiis necessitatibus a natus ducimus fugiat illo. Commodi ipsa consequuntur recusandae deserunt voluptatum, possimus ratione est eos doloribus.",
-    time: "26-Jan-2024",
+    time: "15-Aug-1947",
+
+    icon: "💸",
+    color: "#00C9A7",
+  },
+  {
+    name: "Event 1 top",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae beatae repellat reprehenderit officiis necessitatibus a natus ducimus fugiat illo. Commodi ipsa consequuntur recusandae deserunt voluptatum, possimus ratione est eos doloribus.",
+    time: "15-Aug-1947",
 
     icon: "💸",
     color: "#00C9A7",
   },
 ];
 
-notifications = Array.from({ length: notifications.length/2 }, () => notifications).flat();
+notifications = Array.from(
+  { length: 1},
+  () => notifications
+).flat();
 
 const Notification = ({ name, description, icon, color, time }: Item) => {
   return (
@@ -96,3 +108,4 @@ export default function AnimatedListDemo() {
     </div>
   );
 }
+

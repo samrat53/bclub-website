@@ -12,7 +12,7 @@ const About = () => {
       <section
         ref={ref}
         id="about"
-        className="w-full h-[70vh] px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto"
+        className="w-full h-[80vh] px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto"
       >
         <motion.div
           initial={{ scale: 0.1, opacity: 0 }}
@@ -134,7 +134,7 @@ const generateSquares = () => {
     <motion.div
       key={sq.id}
       layout
-      transition={{ duration: 1.0, type: "spring" }}
+      transition={{ duration: 1.5, type: "spring" }}
       className="w-full h-full"
       style={{
         backgroundImage: `url(${sq.src})`,

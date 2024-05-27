@@ -4,34 +4,72 @@ import { motion } from "framer-motion";
 import React from "react";
 
 export function TeamTabs() {
+  const techTeam: contentType[] = [
+    {
+      name: "hello",
+      designation: "hello design",
+      link: "/bclubLogo.jpg",
+    },
+    {
+      name: "hello2",
+      designation: "hello design2",
+      link: "/bclubLogo.jpg",
+    },
+    {
+      name: "hello2",
+      designation: "hello design2",
+      link: "/bclubLogo.jpg",
+    },
+    {
+      name: "hello2",
+      designation: "hello design2",
+      link: "/bclubLogo.jpg",
+    },
+    {
+      name: "hello2",
+      designation: "hello design2",
+      link: "/bclubLogo.jpg",
+    },
+    {
+      name: "hello2",
+      designation: "hello design2",
+      link: "/bclubLogo.jpg",
+    },
+  ];
   const tabs = [
     {
-      title: "Product",
-      value: "product",
+      title: "Executives",
+      value: "executives",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-900 to-cyan-900">
-          <p>Product Tab</p>
-          <DummyContent />
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
+          <p>Executives</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+            <RenderPerson content={techTeam} />
+          </div>
         </div>
       ),
     },
     {
-      title: "Services",
-      value: "services",
+      title: "Technical",
+      value: "technical",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Services tab</p>
-          <DummyContent />
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
+          <p>Technical team</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+            <RenderPerson content={techTeam} />
+          </div>
         </div>
       ),
     },
     {
-      title: "Playground",
-      value: "playground",
+      title: "Design",
+      value: "design",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Playground tab</p>
-          <DummyContent />
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
+          <p>Design</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+            <RenderPerson content={techTeam} />
+          </div>
         </div>
       ),
     },
@@ -39,26 +77,30 @@ export function TeamTabs() {
       title: "Content",
       value: "content",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Content tab</p>
-          <DummyContent />
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
+          <p>Content</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+            <RenderPerson content={techTeam} />
+          </div>
         </div>
       ),
     },
     {
-      title: "Random",
-      value: "random",
+      title: "Outreach",
+      value: "outreach",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-700 to-violet-900">
-          <p>Random tab</p>
-          <DummyContent />
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
+          <p>OutReacch</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+            <RenderPerson content={techTeam} />
+          </div>
         </div>
       ),
     },
   ];
 
   return (
-    <div className="h-[100vh] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-7xl mx-auto w-full sm:w-[40rem] md:w-[50rem] lg:w-auto items-start justify-start my-40">
+    <div className="h-[250vh] lg:h-[115vh] md:h-[100vh] sm:h-[150vh] [perspective:1000px] relative b flex flex-col max-w-7xl mx-auto w-full sm:w-[40rem] md:w-[50rem] lg:w-auto items-start justify-start my-40">
       <motion.div
         initial={{ x: "-10vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -78,18 +120,42 @@ export function TeamTabs() {
   );
 }
 
-const DummyContent = () => {
+interface contentType {
+  name: string;
+  designation: string;
+  link: string;
+}
+interface RenderPersonProps {
+  content: contentType[];
+}
+
+const RenderPerson = ({ content }: RenderPersonProps) => {
+  return (
+    <>
+      {content.map((item, ind) => (
+        <DummyContent
+          name={item.name}
+          designation={item.designation}
+          link={item.link}
+          key={ind}
+        />
+      ))}
+    </>
+  );
+};
+
+const DummyContent = ({ name, designation, link }: contentType) => {
   return (
     <div className="p-2">
       <div className="card">
         <center>
           <div className="profileimage">
-            <img src="/bclubLogo.jpg" alt="" />
+            <img src={link || "/bclubLogo.jpg"} alt="" />
           </div>
           <div className="Name">
-            <p>John Doe</p>
+            <p>{name || "Name"} </p>
           </div>
-          <p className="text-sm">Design lead</p>
+          <p className="text-sm">{designation || "Designation"}</p>
         </center>
       </div>
     </div>

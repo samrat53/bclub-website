@@ -47,7 +47,7 @@ export default function Navbar() {
         })}
       </div>
       <Link
-        href={"#about"}
+        href={"/#about"}
         className='hidden relative z-[100] sm:flex items-center overflow-hidden whitespace-nowrap rounded-full border-[1px] h-7 md:h-auto
     border-neutral-700 px-4 py-1.5 font-medium
    text-neutral-300 transition-all duration-300

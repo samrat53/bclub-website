@@ -7,7 +7,7 @@ export const AnimatedList = React.memo(
   ({
     className,
     children,
-    delay = 1500,
+    delay = 1000,
   }: {
     className?: string;
     children: React.ReactNode;
@@ -18,7 +18,7 @@ export const AnimatedList = React.memo(
 
     useEffect(() => {
       const interval = setInterval(() => {
-        setIndex((prevIndex) => prevIndex + 1);
+        setIndex((prevIndex) => (prevIndex + 1));
       }, delay);
 
       return () => clearInterval(interval);
@@ -26,7 +26,7 @@ export const AnimatedList = React.memo(
 
     const itemsToShow = useMemo(
       () => childrenArray.slice(0, index + 1).reverse(),
-      [index, childrenArray]
+      [index, childrenArray],
     );
 
     return (
@@ -40,7 +40,7 @@ export const AnimatedList = React.memo(
         </AnimatePresence>
       </div>
     );
-  }
+  },
 );
 
 AnimatedList.displayName = "AnimatedList";
