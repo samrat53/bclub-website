@@ -43,7 +43,7 @@ export function TeamTabs() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
           <p>Executives</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
             <RenderPerson content={techTeam} />
           </div>
         </div>
@@ -55,7 +55,7 @@ export function TeamTabs() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
           <p>Technical team</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
             <RenderPerson content={techTeam} />
           </div>
         </div>
@@ -67,7 +67,7 @@ export function TeamTabs() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
           <p>Design</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
             <RenderPerson content={techTeam} />
           </div>
         </div>
@@ -79,7 +79,7 @@ export function TeamTabs() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
           <p>Content</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
             <RenderPerson content={techTeam} />
           </div>
         </div>
@@ -91,7 +91,7 @@ export function TeamTabs() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
           <p>OutReacch</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
             <RenderPerson content={techTeam} />
           </div>
         </div>
@@ -161,10 +161,10 @@ const DummyContent = ({ name, designation, link }: contentType) => {
     // </div>
     <div className="card-client m-2">
       <div className="user-picture">
-      <img src={link || "/bclubLogo.jpg"} alt="Name" />
+        <img src={link || "/bclubLogo.jpg"} alt="Name" />
       </div>
       <p className="name-client">
-      {name || "Name"}
+        {name || "Name"}
         <span>{designation || "Designation"}</span>
       </p>
     </div>
