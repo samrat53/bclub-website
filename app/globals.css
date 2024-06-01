@@ -19,65 +19,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-.custom-shape-divider-bottom-1716753471 {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1716753471 svg {
-  position: relative;
-  display: block;
-  width: calc(300% + 1.3px);
-  height: 500px;
-}
-
-.custom-shape-divider-bottom-1716753471 .shape-fill {
-  fill: #003f589c;
-}
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-bottom-1716753471 svg {
-    width: calc(300% + 1.3px);
-    height: 425px;
-  }
-}
-/* fill: #003f589c; */
-
-.card {
-  width: 230px;
-  height: 280px;
-  border-radius: 2em;
-  padding: 10px;
-  background-color: #191919;
-  box-shadow: 5px 5px 30px rgb(4, 4, 4), -5px -5px 30px rgb(57, 57, 57);
-}
-
-.profileimage {
-  background-color: transparent;
-  border: none;
-  margin-top: 20px;
-  border-radius: 5em;
-  width: 100px;
-  height: 100px;
-}
-
-.pfp {
-  border-radius: 35em;
-  fill: white;
-}
-
-.Name {
-  color: white;
-  padding: 15px;
-  font-size: 20px;
-  margin-top: 10px;
-}
-
 .events-gradiient {
   background-image: linear-gradient(
     45deg,
@@ -112,4 +53,56 @@ html {
 
 .custom-shape-divider-bottom-1717277712 .shape-fill {
   fill: #06365ecf;
+}
+/* teams */
+
+.card-client {
+  background: #043941;
+  width: 13rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #7cdaccab;
+  box-shadow: 0 3px 10px rgba(207, 212, 222, 1);
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 7rem;
+  height: 7rem;
+  border: 3px solid #7cdacc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.user-picture svg {
+  width: 2.5rem;
+  fill: currentColor;
+}
+
+.name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
 }

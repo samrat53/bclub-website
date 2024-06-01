@@ -146,18 +146,27 @@ const RenderPerson = ({ content }: RenderPersonProps) => {
 
 const DummyContent = ({ name, designation, link }: contentType) => {
   return (
-    <div className="p-2">
-      <div className="card">
-        <center>
-          <div className="profileimage">
-            <img src={link || "/bclubLogo.jpg"} alt="" />
-          </div>
-          <div className="Name">
-            <p>{name || "Name"} </p>
-          </div>
-          <p className="text-sm">{designation || "Designation"}</p>
-        </center>
+    // <div className="p-2">
+    //   <div className="card">
+    //     <center>
+    //       <div className="profileimage">
+    //         <img src={link || "/bclubLogo.jpg"} alt="" />
+    //       </div>
+    //       <div className="Name">
+    //         <p>{name || "Name"} </p>
+    //       </div>
+    //       <p className="text-sm">{designation || "Designation"}</p>
+    //     </center>
+    //   </div>
+    // </div>
+    <div className="card-client m-2">
+      <div className="user-picture">
+      <img src={link || "/bclubLogo.jpg"} alt="Name" />
       </div>
+      <p className="name-client">
+      {name || "Name"}
+        <span>{designation || "Designation"}</span>
+      </p>
     </div>
   );
 };
