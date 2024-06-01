@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "BClub NIT-A",
-  description: "SEO descriptoion",
+  description: "SEO description",
 };
 
 export default function RootLayout({
@@ -23,10 +23,8 @@ export default function RootLayout({
         <Navbar />
         <SmoothScroll>
           <div>{children}</div>
+          <Footer />
         </SmoothScroll>
-          <div>
-            <Footer />
-          </div>
       </body>
     </html>
   );
