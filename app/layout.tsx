@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className}`}>
         <Navbar />
-        <div className="pt-16">{children}</div>
-        <div><Footer/></div>
+        <SmoothScroll>
+          <div>{children}</div>
+        </SmoothScroll>
+          <div>
+            <Footer />
+          </div>
       </body>
     </html>
   );
