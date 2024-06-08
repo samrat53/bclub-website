@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="mt-[50rem] relative">
+    <div className="mt-[15rem] relative">
       <footer className=" rounded-lg shadow">
         <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8 ">
           <div className="sm:flex sm:items-center sm:justify-between z-50">
@@ -31,7 +31,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="custom-shape-divider-bottom-1717277712">
+        {/* <div className="custom-shape-divider-bottom-1717277712">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export default function Footer() {
             ></path>
           </svg>
           <h1></h1>
-        </div>
+        </div> */}
       </footer>
     </div>
   );

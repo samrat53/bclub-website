@@ -3,7 +3,8 @@ import About from "@/components/About";
 import HeroSection from "@/components/HeroSection";
 import MovingCards from "@/components/MovingCards";
 import { motion, useInView } from "framer-motion";
-import React ,{ useRef } from "react";
+import React, { useRef } from "react";
+import bg from "@/public/bg-hero-1.png";
 
 export default function Home() {
   return (
@@ -15,7 +16,15 @@ export default function Home() {
         <div>
           <About />
         </div>
-        <CollabSection />
+        <div
+          style={{
+            backgroundImage: `url(${bg.src})`,
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <CollabSection />
+        </div>
       </div>
     </>
   );
@@ -26,7 +35,7 @@ const CollabSection = () => {
   const inView = useInView(ref, { once: false });
   return (
     <div
-      className="w-full h-[60vh] mt-[15rem] px-8 max-w-6xl mx-auto"
+      className="w-full h-[100vh] max-w-6xl mx-auto"
       ref={ref}
     >
       <motion.div
@@ -34,8 +43,8 @@ const CollabSection = () => {
         animate={
           inView ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0.5 }
         }
-        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
-        className="text-4xl md:text-6xl font-semibold"
+        transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
+        className="text-4xl md:text-6xl font-semibold pt-[13rem]"
       >
         Collaborations
         <p className="text-base md:text-lg  my-4 md:my-6">
