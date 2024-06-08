@@ -61,7 +61,7 @@ const About = () => {
       <section
         ref={ref1}
         id="aboutTop"
-        className="w-full h-[50vh] px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto mt-40"
+        className="w-full h-[30vh] px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto mt-40"
       >
         <motion.div
           initial={{ scale: 0.1, opacity: 0 }}

@@ -5,6 +5,7 @@ import MovingCards from "@/components/MovingCards";
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
 import bg from "@/public/bg-hero-1.png";
+import Initiatives from "@/components/Initiatives";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
         </div>
         <div>
           <About />
+        </div>
+        <div>
+          <Initiatives />
         </div>
         <div
           style={{
@@ -34,10 +38,7 @@ const CollabSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: false });
   return (
-    <div
-      className="w-full h-[100vh] max-w-6xl mx-auto"
-      ref={ref}
-    >
+    <div className="w-full h-[100vh] max-w-6xl mx-auto" ref={ref}>
       <motion.div
         initial={{ scale: 0.8, opacity: 0.5 }}
         animate={
