@@ -1,34 +1,34 @@
 export const initiatives = [
   {
-    title: "title 1",
+    title: "BBC",
     description: "description description description laura lassan",
     chapters: [
-      ["bclubLogo.jpg", "bclubLogo.jpg"],
-      ["bclubLogo.jpg", "bclubLogo.jpg"],
+      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
+      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
     ],
   },
   {
-    title: "title 1",
+    title: "BBC",
     description: "description description description laura lassan",
     chapters: [
-      ["bclubLogo.jpg", "bclubLogo.jpg"],
-      ["bclubLogo.jpg", "bclubLogo.jpg"],
+      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
+      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
     ],
   },
   {
-    title: "title 1",
+    title: "BBC",
     description: "description description description laura lassan",
     chapters: [
-      ["bclubLogo.jpg", "bclubLogo.jpg"],
-      ["bclubLogo.jpg", "bclubLogo.jpg"],
+      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
+      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
     ],
   },
   {
-    title: "title 1",
+    title: "BBC",
     description: "description description description laura lassan",
     chapters: [
-      ["bclubLogo.jpg", "bclubLogo.jpg"],
-      ["bclubLogo.jpg", "bclubLogo.jpg"],
+      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
+      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
     ],
   },
 ];

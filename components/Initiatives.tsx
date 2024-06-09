@@ -31,7 +31,6 @@ export default function Initiatives() {
                 title={item.title}
                 description={item.description}
                 id={index}
-                chapters={item.chapters}
               />
             );
           })}

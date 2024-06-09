@@ -4,12 +4,10 @@ export default function ({
   title,
   description,
   id,
-  chapters
 }: {
   title: string;
   description: string;
   id: number;
-  chapters:string[][]
 }) {
   return (
     <Link href={`/initiatives/${id.toString()}`} className="tile h-40 w-[15rem]">

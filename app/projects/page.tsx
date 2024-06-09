@@ -43,7 +43,7 @@ const RenderProjects = ({
 }) => {
   return (
     <>
-      <div className="card-container">
+      <div className="card-container h-[20rem] w-[17rem]">
         <div className="card">
           <div className="front-content">
             <p>{title}</p>

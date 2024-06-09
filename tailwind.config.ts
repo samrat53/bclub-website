@@ -29,10 +29,10 @@ const config: Config = {
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
-          to: { height: "2rem" },
+          to: { height: "14rem" },
         },
         "accordion-up": {
-          from: { height: "2rem" },
+          from: { height: "14rem" },
           to: { height: "0" },
         },
         scroll: {
