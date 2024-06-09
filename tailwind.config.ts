@@ -14,6 +14,8 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
         meteor: "meteor 5s linear infinite",
         ripple: "ripple 3400ms ease infinite",
         scroll:
@@ -25,6 +27,14 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "2rem" },
+        },
+        "accordion-up": {
+          from: { height: "2rem" },
+          to: { height: "0" },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
@@ -49,7 +59,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors,require("tailwindcss-animate")],
 };
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).

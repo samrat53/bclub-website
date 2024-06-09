@@ -3,32 +3,32 @@ export const initiatives = [
     title: "title 1",
     description: "description description description laura lassan",
     chapters: [
-      ["hello", "hello1"],
-      ["hello2", "hello3"],
+      ["bclubLogo.jpg", "bclubLogo.jpg"],
+      ["bclubLogo.jpg", "bclubLogo.jpg"],
     ],
   },
   {
     title: "title 1",
     description: "description description description laura lassan",
     chapters: [
-      ["hello", "hello1"],
-      ["hello2", "hello3"],
+      ["bclubLogo.jpg", "bclubLogo.jpg"],
+      ["bclubLogo.jpg", "bclubLogo.jpg"],
     ],
   },
   {
     title: "title 1",
     description: "description description description laura lassan",
     chapters: [
-      ["hello", "hello1"],
-      ["hello2", "hello3"],
+      ["bclubLogo.jpg", "bclubLogo.jpg"],
+      ["bclubLogo.jpg", "bclubLogo.jpg"],
     ],
   },
   {
     title: "title 1",
     description: "description description description laura lassan",
     chapters: [
-      ["hello", "hello1"],
-      ["hello2", "hello3"],
+      ["bclubLogo.jpg", "bclubLogo.jpg"],
+      ["bclubLogo.jpg", "bclubLogo.jpg"],
     ],
   },
 ];
