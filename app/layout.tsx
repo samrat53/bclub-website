@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "BClub NIT-A",
-  description: "SEO description",
+  description: "",
 };
 
 export default function RootLayout({
@@ -19,11 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`${inter.className}`}>
         <Navbar />
         {/* <SmoothScroll> */}
-          <div>{children}</div>
-          <Footer />
+        <div>{children}</div>
+        <Footer />
         {/* </SmoothScroll> */}
       </body>
     </html>

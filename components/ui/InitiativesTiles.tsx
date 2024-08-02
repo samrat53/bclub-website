@@ -4,17 +4,24 @@ export default function ({
   title,
   description,
   id,
+  link,
+  tagline,
 }: {
   title: string;
   description: string;
   id: number;
+  link: string;
+  tagline: string;
 }) {
   return (
-    <Link href={`/initiatives/${id.toString()}`} className="tile h-40 w-[35rem]">
+    <Link href={link} className="tile h-[9rem] w-[35rem]">
       <p className="time-text">
         <span>{title}</span>
       </p>
-      <p className="day-text">{description}</p>
+      <p className="day-text">{tagline}</p>
+      {/* <div className="mt-6">
+        <p className="day-text">{description}</p>
+      </div> */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"

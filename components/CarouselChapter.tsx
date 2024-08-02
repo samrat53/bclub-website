@@ -30,7 +30,7 @@ export default function CarouselChapter({ items }: { items: string[] }) {
             >
               <Image
                 src={src}
-                width={200}
+                width={400}
                 height={200}
                 className="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
                 alt={`Carousel item ${index + 1}`}

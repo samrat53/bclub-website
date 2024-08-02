@@ -50,7 +50,7 @@ export function TeamTabs() {
     {
       name: "Saumya Chandra",
       designation: "Assistant GS",
-      link: "/executives/saumya.jpg",
+      link: "/executives/saumya.png",
     },
     {
       name: "Soumyadeep Acharya",
@@ -62,7 +62,7 @@ export function TeamTabs() {
     {
       name: "Saumya Chandra",
       designation: "Lead",
-      link: "/design/saumya.jpg",
+      link: "/executives/saumya.png",
     },
     {
       name: "Chhitij Ranpal",
@@ -154,7 +154,7 @@ export function TeamTabs() {
       link: "/logistics/himankan.png",
     },
     {
-      name: "Agrim Guota",
+      name: "Agrim Gupta",
       designation: "Member",
       link: "/logistics/agrim.png",
     },
@@ -166,7 +166,7 @@ export function TeamTabs() {
   ];
   const events: contentType[] = [
     {
-      name: "Soumyadeep Acharya",
+      name: "Soumyadeep A.",
       designation: "Lead",
       link: "/executives/soumyadeep.jpg",
     },
@@ -382,7 +382,8 @@ export function TeamTabs() {
       ),
     },
   ];
-
+ 
+  const descriptiontext=`Our Business Club is led by a diverse group of passionate and dedicated individuals committed to driving our mission forward. Meet the innovative minds behind our initiatives and events, and discover how their unique skills and perspectives shape the vibrant community of our club.`
   return (
     <div className="h-[250vh] lg:h-[115vh] md:h-[100vh] sm:h-[150vh] [perspective:1000px] relative b flex flex-col max-w-7xl mx-auto w-full sm:w-[40rem] md:w-[50rem] lg:w-auto items-start justify-start my-40">
       <motion.div
@@ -391,12 +392,9 @@ export function TeamTabs() {
         transition={{ type: "spring", stiffness: 30, damping: 10 }}
         className="pb-5"
       >
-        <h3 className="text-4xl md:text-6xl font-semibold">Core Team</h3>
+        <h3 className="text-4xl md:text-6xl font-semibold">Meet the Team</h3>
         <p className="text-base md:text-lg  my-4 md:my-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          beatae repellat reprehenderit officiis necessitatibus a natus ducimus
-          fugiat illo. Commodi ipsa consequuntur recusandae deserunt voluptatum,
-          possimus ratione est eos doloribus.
+         {descriptiontext}
         </p>
       </motion.div>
       <Tabs tabs={tabs} />

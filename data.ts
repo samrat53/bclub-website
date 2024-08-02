@@ -11,7 +11,7 @@ export const initiatives = [
     title: "BBC",
     description: "Business Breakdown Casestudy",
     chapters: [
-      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
+      ["/initiatives/bbc/c1/row-1-column-1.png", "/bg-hero-1.png", "/bclubLogo.jpg"],
       ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
     ],
   },
