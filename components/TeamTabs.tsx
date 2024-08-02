@@ -6,34 +6,270 @@ import React from "react";
 export function TeamTabs() {
   const techTeam: contentType[] = [
     {
-      name: "hello",
-      designation: "hello design",
-      link: "/bclubLogo.jpg",
+      name: "S. Bhattacharya",
+      designation: "Lead",
+      link: "/tech/samrat.png",
     },
     {
-      name: "hello2",
-      designation: "hello design2",
-      link: "/bclubLogo.jpg",
+      name: "Sayan Jyoti Das",
+      designation: "Co-Lead",
+      link: "/tech/sayanjyoti.jpg",
     },
     {
-      name: "hello2",
-      designation: "hello design2",
-      link: "/bclubLogo.jpg",
+      name: "Tathagata Ghosh",
+      designation: "Member",
+      link: "/tech/tathagatha.jpg",
     },
     {
-      name: "hello2",
-      designation: "hello design2",
-      link: "/bclubLogo.jpg",
+      name: "Tanmoy Majumdar",
+      designation: "Member",
+      link: "/tech/tanmoy.jpg",
+    },
+  ];
+  const executives: contentType[] = [
+    {
+      name: "Swapnonil Ghosh",
+      designation: "President",
+      link: "/executives/swapnonil.jpg",
     },
     {
-      name: "hello2",
-      designation: "hello design2",
-      link: "/bclubLogo.jpg",
+      name: "Srijan Mallick",
+      designation: "Vice President",
+      link: "/executives/srijan.jpg",
     },
     {
-      name: "hello2",
-      designation: "hello design2",
-      link: "/bclubLogo.jpg",
+      name: "Omisha Bajoria",
+      designation: "General Secretary",
+      link: "/executives/omisha.jpg",
+    },
+    {
+      name: "Aditi V Paunikar",
+      designation: "Assistant GS",
+      link: "/executives/aditi.png",
+    },
+    {
+      name: "Saumya Chandra",
+      designation: "Assistant GS",
+      link: "/executives/saumya.jpg",
+    },
+    {
+      name: "Soumyadeep Acharya",
+      designation: "Operations Head",
+      link: "/executives/soumyadeep.jpg",
+    },
+  ];
+  const designTeam: contentType[] = [
+    {
+      name: "Saumya Chandra",
+      designation: "Lead",
+      link: "/design/saumya.jpg",
+    },
+    {
+      name: "Chhitij Ranpal",
+      designation: "Co-Lead",
+      link: "/design/chhitij.jpg",
+    },
+    {
+      name: "K. Chakraborty",
+      designation: "Member",
+      link: "/design/koena.png",
+    },
+    {
+      name: "Sakhil Das",
+      designation: "Member",
+      link: "/design/sakhil.jpg",
+    },
+    {
+      name: "Rinita Singha",
+      designation: "Member",
+      link: "/design/rinita.jpg",
+    },
+    {
+      name: "Amlan Saha",
+      designation: "Member",
+      link: "/design/amlan.jpg",
+    },
+    {
+      name: "Akmal Hossain",
+      designation: "Member",
+      link: "/design/akmal.jpeg",
+    },
+  ];
+  const product: contentType[] = [
+    {
+      name: "Swapnonil Ghosh",
+      designation: "Lead",
+      link: "/executives/swapnonil.jpg",
+    },
+    {
+      name: "Sourabh Roy",
+      designation: "Co-Lead",
+      link: "/product/sourabh.jpg",
+    },
+    {
+      name: "Anirban Modak",
+      designation: "Member",
+      link: "/product/anirban.jpeg",
+    },
+    {
+      name: "K.G Krishna",
+      designation: "Member",
+      link: "/product/gopi.png",
+    },
+    {
+      name: "Abhishek K.",
+      designation: "Member",
+      link: "/product/abhishek.jpg",
+    },
+    {
+      name: "Akmal Hossain",
+      designation: "Member",
+      link: "/design/akmal.jpeg",
+    },
+    {
+      name: "Harshit Benke",
+      designation: "Member",
+      link: "/product/harshit.jpg",
+    },
+  ];
+  const logistics: contentType[] = [
+    {
+      name: "Omisha Bajoria",
+      designation: "Lead",
+      link: "/executives/omisha.jpg",
+    },
+    {
+      name: "Aman Kumar",
+      designation: "Co-Lead",
+      link: "/logistics/aman.jpg",
+    },
+    {
+      name: "Leela Shiva Kumar",
+      designation: "Member",
+      link: "/logistics/leela.jpg",
+    },
+    {
+      name: "Himankan Dutta",
+      designation: "Member",
+      link: "/logistics/himankan.png",
+    },
+    {
+      name: "Agrim Guota",
+      designation: "Member",
+      link: "/logistics/agrim.png",
+    },
+    {
+      name: "Chirag Saha",
+      designation: "Member",
+      link: "/logistics/chirag.jpg",
+    },
+  ];
+  const events: contentType[] = [
+    {
+      name: "Soumyadeep Acharya",
+      designation: "Lead",
+      link: "/executives/soumyadeep.jpg",
+    },
+    {
+      name: "Arkyajit B.",
+      designation: "Co-Lead",
+      link: "/events/arkyajit.JPG",
+    },
+    {
+      name: "Vaishnavi H.",
+      designation: "Member",
+      link: "/events/vaishnavi.webp",
+    },
+    {
+      name: "Diptaraj Deb",
+      designation: "Member",
+      link: "/events/diptaraj.png",
+    },
+    {
+      name: "Himankan Dutta",
+      designation: "Member",
+      link: "/logistics/himankan.png",
+    },
+    {
+      name: "Aniket Anand",
+      designation: "Member",
+      link: "/events/aniket.png",
+    },
+    {
+      name: "Meghatithi C.",
+      designation: "Member",
+      link: "/events/megha.png",
+    },
+  ];
+  const videography: contentType[] = [
+    {
+      name: "Swapnonil Ghosh",
+      designation: "Lead",
+      link: "/executives/swapnonil.jpg",
+    },
+    {
+      name: "Rahul Kumar",
+      designation: "Co-Lead",
+      link: "/videography/rahul.jpeg",
+    },
+  ];
+  const outreach: contentType[] = [
+    {
+      name: "Srijan Mallick",
+      designation: "Lead",
+      link: "/executives/srijan.jpg",
+    },
+    {
+      name: "Ankit Bhardwaj",
+      designation: "Co-Lead",
+      link: "/outreach/ankit.jpg",
+    },
+    {
+      name: "Chirag Saha",
+      designation: "Member",
+      link: "/logistics/chirag.jpg",
+    },
+    {
+      name: "Akmal Hossain",
+      designation: "Member",
+      link: "/design/akmal.jpeg",
+    },
+    {
+      name: "Harshit Benke",
+      designation: "Member",
+      link: "/product/harshit.jpg",
+    },
+  ];
+  const pr: contentType[] = [
+    {
+      name: "Aditi V Paunikar",
+      designation: "Lead",
+      link: "/executives/aditi.png",
+    },
+    {
+      name: "Vaishnavi H.",
+      designation: "Co-Lead",
+      link: "/events/vaishnavi.webp",
+    },
+    {
+      name: "Diptaraj Deb",
+      designation: "Member",
+      link: "/events/diptaraj.png",
+    },
+    {
+      name: "Leela Shiva Kumar",
+      designation: "Member",
+      link: "/logistics/leela.jpg",
+    },
+    {
+      name: "Chirag Saha",
+      designation: "Member",
+      link: "/logistics/chirag.jpg",
+    },
+    {
+      name: "Agrim Guota",
+      designation: "Member",
+      link: "/logistics/agrim.png",
     },
   ];
   const tabs = [
@@ -44,7 +280,7 @@ export function TeamTabs() {
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
           <p>Executives</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
-            <RenderPerson content={techTeam} />
+            <RenderPerson content={executives} />
           </div>
         </div>
       ),
@@ -66,33 +302,81 @@ export function TeamTabs() {
       value: "design",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
-          <p>Design</p>
+          <p>Design Team</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
-            <RenderPerson content={techTeam} />
+            <RenderPerson content={designTeam} />
           </div>
         </div>
       ),
     },
     {
-      title: "Content",
-      value: "content",
+      title: "Product",
+      value: "product",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
-          <p>Content</p>
+          <p>Product Management Team</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
-            <RenderPerson content={techTeam} />
+            <RenderPerson content={product} />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Logistics",
+      value: "Logistics",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
+          <p>Logistics Team</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
+            <RenderPerson content={logistics} />
           </div>
         </div>
       ),
     },
     {
       title: "Outreach",
-      value: "outreach",
+      value: "Outreach",
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
-          <p>OutReacch</p>
+          <p>Outreach Team</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
-            <RenderPerson content={techTeam} />
+            <RenderPerson content={outreach} />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "PR & Content",
+      value: "PR and Content Management Team",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
+          <p>PR and Content Management Team</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
+            <RenderPerson content={pr} />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Events",
+      value: "events",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
+          <p>Event Management Team</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
+            <RenderPerson content={events} />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Videography",
+      value: "Videography",
+      content: (
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white team-gradient ">
+          <p>Videography and Editing Team</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-items-center items-center">
+            <RenderPerson content={videography} />
           </div>
         </div>
       ),

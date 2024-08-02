@@ -82,6 +82,8 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
 };
 
 export default function AnimatedListDemo() {
+  const eventsText=`Our Business Club hosts a dynamic array of events designed to inspire, educate, and connect our members. From keynote speeches by industry experts and hands-on workshops to networking mixers and panel discussions, our events offer valuable insights and opportunities to engage with like-minded individuals. Stay updated with our event calendar and join us in fostering a culture of learning and professional growth.`
+
   return (
     <div className="">
       <motion.div
@@ -92,18 +94,16 @@ export default function AnimatedListDemo() {
       >
         <h3 className="text-4xl md:text-6xl font-semibold">Events</h3>
         <p className="text-base md:text-lg  my-4 md:my-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          beatae repellat reprehenderit officiis necessitatibus a natus ducimus
-          fugiat illo. Commodi ipsa consequuntur recusandae deserunt voluptatum,
-          possimus ratione est eos doloribus.
+          {eventsText}
         </p>
       </motion.div>
       <div className="relative flex min-h-[50vh] mx-auto my-20 w-full max-w-7xl text-white flex-col overflow-hidden border-t-2 p-5">
-        <AnimatedList>
+        {/* <AnimatedList>
           {notifications.map((item, idx) => (
             <Notification {...item} key={idx} />
           ))}
-        </AnimatedList>
+        </AnimatedList> */}
+        <img src="coming.jpg" alt="" />
       </div>
     </div>
   );
