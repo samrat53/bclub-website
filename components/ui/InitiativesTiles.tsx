@@ -10,7 +10,7 @@ export default function ({
   id: number;
 }) {
   return (
-    <Link href={`/initiatives/${id.toString()}`} className="tile h-40 w-[15rem]">
+    <Link href={`/initiatives/${id.toString()}`} className="tile h-40 w-[35rem]">
       <p className="time-text">
         <span>{title}</span>
       </p>

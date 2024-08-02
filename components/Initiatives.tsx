@@ -7,6 +7,7 @@ import { initiatives } from "@/data";
 export default function Initiatives() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: false });
+  const initiativesText=`Our Business Club is committed to driving positive change through a range of strategic initiatives. We focus on sustainability, entrepreneurship, community outreach, and professional development to create meaningful impacts both within and beyond our club. Explore our initiatives and join us in our mission to create a better future.`
   return (
     <div className="w-full sm:h-[90vh]  max-w-6xl mx-auto" ref={ref}>
       <motion.div
@@ -19,12 +20,9 @@ export default function Initiatives() {
       >
         Initiatives
         <p className="text-base md:text-lg  my-4 md:my-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          beatae repellat reprehenderit officiis necessitatibus a natus ducimus
-          fugiat illo. Commodi ipsa consequuntur recusandae deserunt voluptatum,
-          possimus ratione est eos doloribus.
+          {initiativesText}
         </p>
-        <div className="grid lg:grid-cols-4 md:gap-2 lg:gap-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-center py-10">
+        <div className="grid md:grid-cols-2 md:gap-2 lg:gap-3 sm:grid-cols-2 grid-cols-1 items-center py-10">
           {initiatives.map((item, index) => {
             return (
               <InitiativesTiles

@@ -14,13 +14,13 @@ export default function Home() {
         <div className="h-[100vh]">
           <HeroSection />
         </div>
-        <div>
+        <div id="about">
           <About />
         </div>
         <div>
           <Initiatives />
         </div>
-        <div
+        {/* <div
           style={{
             backgroundImage: `url(${bg.src})`,
             width: "100%",
@@ -28,7 +28,7 @@ export default function Home() {
           }}
         >
           <CollabSection />
-        </div>
+        </div> */}
       </div>
     </>
   );
@@ -37,6 +37,7 @@ export default function Home() {
 const CollabSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: false });
+  const collabText=`At our Business Club, we believe in the power of collaboration. We partner with industry leaders, innovative startups, and academic institutions to provide our members with unparalleled opportunities for growth and networking. By working together, we aim to foster a vibrant community where ideas flourish and future business leaders are born. Join us and be a part of a collaborative journey towards success.`
   return (
     <div className="w-full h-[100vh] max-w-6xl mx-auto" ref={ref}>
       <motion.div
@@ -49,10 +50,7 @@ const CollabSection = () => {
       >
         Collaborations
         <p className="text-base md:text-lg  my-4 md:my-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          beatae repellat reprehenderit officiis necessitatibus a natus ducimus
-          fugiat illo. Commodi ipsa consequuntur recusandae deserunt voluptatum,
-          possimus ratione est eos doloribus.
+          {collabText}
         </p>
       </motion.div>
       <MovingCards />

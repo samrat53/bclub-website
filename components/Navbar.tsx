@@ -14,10 +14,10 @@ export default function Navbar() {
       link: "/teams",
       name: "Teams",
     },
-    {
-      link: "/projects",
-      name: "Projects",
-    },
+    // {
+    //   link: "/projects",
+    //   name: "Projects",
+    // },
   ];
 
   return (

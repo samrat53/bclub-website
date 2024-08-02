@@ -1,7 +1,7 @@
 export const initiatives = [
   {
-    title: "BBC",
-    description: "description description description laura lassan",
+    title: "BTE",
+    description: "Business Terminologies Explained",
     chapters: [
       ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
       ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
@@ -9,23 +9,7 @@ export const initiatives = [
   },
   {
     title: "BBC",
-    description: "description description description laura lassan",
-    chapters: [
-      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
-      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
-    ],
-  },
-  {
-    title: "BBC",
-    description: "description description description laura lassan",
-    chapters: [
-      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
-      ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
-    ],
-  },
-  {
-    title: "BBC",
-    description: "description description description laura lassan",
+    description: "Business Breakdown Casestudy",
     chapters: [
       ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
       ["/bclubLogo.jpg", "/bg-hero-1.png", "/bclubLogo.jpg"],
