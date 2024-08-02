@@ -3,7 +3,7 @@ import LogoRender from "./ui/LogoRender";
 import WordRotate from "./magicui/word-rotate";
 import { SocialIcons } from "./SocialIcons";
 import { useEffect } from "react";
-import bg from "@/public/bg-hero-1.png";
+import bg from "@/public/bg1.png"; //file name bg-1
 
 const HeroSection = () => {
   const controls = useAnimation();
